@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emlak Web Sitesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Emlak Arama</h1>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Şehir veya mahalle">
+            <button onclick="searchProperties()">Ara</button>
+        </div>
+        <div id="propertyList"></div>
+        <h2>Yeni İlan Ekle</h2>
+        <div class="add-property">
+            <input type="text" id="propertyTitle" placeholder="Başlık">
+            <input type="text" id="propertyLocation" placeholder="Konum">
+            <textarea id="propertyDescription" placeholder="Açıklama"></textarea>
+            <button onclick="addProperty()">Ekle</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
